@@ -42,3 +42,69 @@ function burgerMenu() {
   }
   window.addEventListener('scroll', fixedNav)
 
+
+// Animations
+gsap.registerPlugin(ScrollTrigger)
+
+gsap.from(".hero__subtitle", 1.5, {
+  scrollTrigger: {
+    trigger: ".section__hero"
+  }, // start the animation when ".box" enters the viewport (once)
+  y: 100,
+  opacity: 0,
+});
+gsap.from(".hero__title", 1, {
+  scrollTrigger: {
+    trigger: ".section__hero"
+  }, // start the animation when ".box" enters the viewport (once)
+  y: 100,
+  opacity: 0,
+});
+gsap.from(".hero__text", 1, {
+  scrollTrigger: {
+    trigger: ".section__hero"
+  }, // start the animation when ".box" enters the viewport (once)
+  y: -50,
+  delay: 1,
+  opacity: 0
+});
+gsap.from(".form__label", 2, {
+  scrollTrigger: {
+    trigger: ".section__hero"
+  }, // start the animation when ".box" enters the viewport (once)
+  width: 0
+});
+gsap.from(".form__btn", 3, {
+  scrollTrigger: {
+    trigger: ".section__hero"
+  }, // start the animation when ".box" enters the viewport (once)
+  opacity: 0,
+  delay: 1.5
+});
+
+gsap.from(".hero__img", 2, {
+  scrollTrigger: {
+    trigger: ".section__hero"
+  }, // start the animation when ".box" enters the viewport (once)
+  opacity: 0,
+  delay: 0.5,
+  scale: 0
+});
+
+gsap.from(".hero-1", 1, {
+  scrollTrigger: {
+    trigger: ".section__hero"
+  }, // start the animation when ".box" enters the viewport (once)
+  opacity: 0,
+  y: 50,
+  delay: 1
+});
+gsap.from(".hero-2", 1, {
+  scrollTrigger: {
+    trigger: ".section__hero"
+  }, // start the animation when ".box" enters the viewport (once)
+  opacity: 0,
+  y: 100,
+  delay: 1.2
+});
+
